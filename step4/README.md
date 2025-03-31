@@ -117,7 +117,7 @@ Por padrão, a API será iniciada em **http://0.0.0.0:3000**.
 
 ---
 
-## 🔍 Endpoints Disponíveis
+## 🔍 Endpoint Disponível
 
 ### 🔹 Buscar Operadoras
 ```http
@@ -147,27 +147,6 @@ GET /api/search?q={termo}&page={número}&per_page={quantidade}
     "page": 1,
     "per_page": 5,
     "total_pages": 10
-  }
-}
-```
-
----
-
-### 🔹 Buscar Operadora por Registro ANS
-```http
-GET /api/operators/{registro_ans}
-```
-📌 **Exemplo:** `GET /api/operators/123456`
-
-🔹 **Resposta:**
-```json
-{
-  "data": {
-    "Registro_ANS": "123456",
-    "CNPJ": "12.345.678/0001-90",
-    "Razao_Social": "Saúde Total LTDA",
-    "Nome_Fantasia": "Saúde Total",
-    ...
   }
 }
 ```
