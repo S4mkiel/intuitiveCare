@@ -89,7 +89,7 @@ poetry install
 cd step1&2
 ```
 
-### Step 1: Web Scraping (Baixar e Compactar PDFs)
+### Step 1&2:
 ```bash
 python main.py
 ```
