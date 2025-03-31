@@ -1,0 +1,24 @@
+[project]
+name = "intuitivecare"
+version = "0.1.0"
+description = ""
+authors = [
+    {name = "Roberto Filho",email = "zferraz.rf@gmail.com"}
+]
+license = {text = "MIT"}
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "requests (>=2.32.3,<3.0.0)",
+    "bs4 (>=0.0.2,<0.0.3)",
+    "pandas (>=2.2.3,<3.0.0)",
+    "pdfplumber (>=0.11.5,<0.12.0)",
+    "rich (>=13.9.4,<14.0.0)",
+    "fitz (>=0.0.1.dev2,<0.0.2)",
+    "pymupdf (>=1.25.4,<2.0.0)"
+]
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
