@@ -126,7 +126,7 @@ GET /api/search?q={termo}&page={número}&per_page={quantidade}
 📌 **Exemplo:** `GET /api/search?q=saude&page=1&per_page=5`
 
 🔹 **Parâmetros:**
-- `q` → Termo de busca (obrigatório)
+- `q` → Termo de busca
 - `page` → Número da página (padrão: 1)
 - `per_page` → Quantidade de itens por página (padrão: 10)
 
