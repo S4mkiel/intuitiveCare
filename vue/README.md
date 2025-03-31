@@ -12,17 +12,7 @@ Este projeto é uma aplicação Vue.js para buscar operadoras de planos de saúd
 
 ## 📥 Como Instalar o Projeto
 
-1. **Clone o repositório:**
-   ```sh
-   git clone https://github.com/seu-usuario/seu-repositorio.git
-   ```
-
-2. **Acesse a pasta do projeto:**
-   ```sh
-   cd nome-do-projeto
-   ```
-
-3. **Instale as dependências:**
+1. **Instale as dependências:**
    ```sh
    npm install
    ```
