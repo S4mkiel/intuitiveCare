@@ -3,7 +3,7 @@
 ## 📖 Sobre o Projeto
 Este projeto é uma API desenvolvida em Python utilizando Flask, Poetry e arquitetura **Ports and Adapters**. A API permite buscar e consultar operadoras de planos de saúde a partir de um arquivo CSV. 
 
----ç
+---
 
 ## 🚀 Tecnologias Utilizadas
 
