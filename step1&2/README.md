@@ -74,7 +74,6 @@ Para gerenciar dependências, utilizei o Poetry. Siga as instruções abaixo par
 ## 🔧 Instalação das Dependências
 Dentro do diretório do projeto, execute:
 
-```
 ```bash
 poetry shell
 ```
