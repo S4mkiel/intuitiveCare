@@ -1,0 +1,190 @@
+{
+	"info": {
+		"_postman_id": "0e07caa5-b341-47c0-a126-6ff45e51633f",
+		"name": "Teste API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "38754820"
+	},
+	"item": [
+		{
+			"name": "searh",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{base}}/search?page=1&per_page=10&sort_by=Complemento&order=asc",
+					"host": [
+						"{{base}}"
+					],
+					"path": [
+						"search"
+					],
+					"query": [
+						{
+							"key": "q",
+							"value": "saude",
+							"disabled": true
+						},
+						{
+							"key": "page",
+							"value": "1"
+						},
+						{
+							"key": "per_page",
+							"value": "10"
+						},
+						{
+							"key": "sort_by",
+							"value": "Complemento"
+						},
+						{
+							"key": "order",
+							"value": "asc"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Example with q in query",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base}}/search?q=saude&page=1&per_page=10&sort_by=Complemento&order=asc",
+							"host": [
+								"{{base}}"
+							],
+							"path": [
+								"search"
+							],
+							"query": [
+								{
+									"key": "q",
+									"value": "saude"
+								},
+								{
+									"key": "page",
+									"value": "1"
+								},
+								{
+									"key": "per_page",
+									"value": "10"
+								},
+								{
+									"key": "sort_by",
+									"value": "Complemento"
+								},
+								{
+									"key": "order",
+									"value": "asc"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "Werkzeug/3.1.3 Python/3.12.9"
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 29 Mar 2025 00:44:39 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Content-Length",
+							"value": "7056"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"data\": [\n        {\n            \"Bairro\": \"CENTRO\",\n            \"CEP\": 8500901,\n            \"CNPJ\": 51262335000119,\n            \"Cargo_Representante\": \"SOCIO-GERENTE\",\n            \"Cidade\": \"Ferraz de Vasconcelos\",\n            \"Complemento\": \"\",\n            \"DDD\": 11,\n            \"Data_Registro_ANS\": \"2007-03-08\",\n            \"Endereco_eletronico\": \"info@saogabrielsaude.com.br\",\n            \"Fax\": 46765514,\n            \"Logradouro\": \"PRAÇA DA INDEPENDENCIA\",\n            \"Modalidade\": \"Medicina de Grupo\",\n            \"Nome_Fantasia\": \"\",\n            \"Numero\": \"17\",\n            \"Razao_Social\": \"CLÍNICA SÃO GABRIEL S/S LTDA\",\n            \"Registro_ANS\": 415944,\n            \"Representante\": \"JOSE CARLOS ABISSAMRA\",\n            \"Telefone\": 46755166,\n            \"UF\": \"SP\"\n        },\n        {\n            \"Bairro\": \"PADRE EUSTÁQUIO\",\n            \"CEP\": 30730170,\n            \"CNPJ\": 3613857000175,\n            \"Cargo_Representante\": \"ADMINISTRADOR \",\n            \"Cidade\": \"Belo Horizonte\",\n            \"Complemento\": \"\",\n            \"DDD\": 31,\n            \"Data_Registro_ANS\": \"2000-02-21\",\n            \"Endereco_eletronico\": \"gerencia@confiancasaude.com.br\",\n            \"Fax\": 34112025,\n            \"Logradouro\": \"RUA LORENA\",\n            \"Modalidade\": \"Medicina de Grupo\",\n            \"Nome_Fantasia\": \"CONFIANÇA SAÚDE\",\n            \"Numero\": \"767\",\n            \"Razao_Social\": \"CONFIANÇA ASSISTÊNCIA MÉDICO HOSPITALAR LTDA\",\n            \"Registro_ANS\": 410624,\n            \"Representante\": \"ROBERTO D'ASSUMPCAO GUIMARAES\",\n            \"Telefone\": 34112025,\n            \"UF\": \"MG\"\n        },\n        {\n            \"Bairro\": \"CENTRO\",\n            \"CEP\": 28300000,\n            \"CNPJ\": 29640612000120,\n            \"Cargo_Representante\": \"REPRESENTANTE JUNTO A ANS\",\n            \"Cidade\": \"Itaperuna\",\n            \"Complemento\": \"\",\n            \"DDD\": \"\",\n            \"Data_Registro_ANS\": \"1998-12-16\",\n            \"Endereco_eletronico\": \"saudeavai@saudeavai.com.br\",\n            \"Fax\": \"\",\n            \"Logradouro\": \"RUA CORONEL LUIZ FERRAZ\",\n            \"Modalidade\": \"Filantropia\",\n            \"Nome_Fantasia\": \"HOSPITAL SÃO JOSÉ DO AVAÍ\",\n            \"Numero\": \"397\",\n            \"Razao_Social\": \"CONFERÊNCIA SÃO JOSÉ DO AVAÍ\",\n            \"Registro_ANS\": 321931,\n            \"Representante\": \"AUGUSTO CLAUDIO DE ALMEIDA TINOCO\",\n            \"Telefone\": \"\",\n            \"UF\": \"RJ\"\n        },\n        {\n            \"Bairro\": \"VILA LIBERDADE\",\n            \"CEP\": 19050050,\n            \"CNPJ\": 8708980000193,\n            \"Cargo_Representante\": \"DIRETOR PRESIDENTE\",\n            \"Cidade\": \"Presidente Prudente\",\n            \"Complemento\": \"\",\n            \"DDD\": 18,\n            \"Data_Registro_ANS\": \"2008-10-03\",\n            \"Endereco_eletronico\": \"oestesaude@oestesaude.com.br\",\n            \"Fax\": \"\",\n            \"Logradouro\": \"AVENIDA ONZE DE MAIO\",\n            \"Modalidade\": \"Medicina de Grupo\",\n            \"Nome_Fantasia\": \"OESTE SAÚDE\",\n            \"Numero\": \"1521\",\n            \"Razao_Social\": \"OESTE SAÚDE ASSISTÊNCIA A SAÚDE SUPLEMENTAR S.A\",\n            \"Registro_ANS\": 416738,\n            \"Representante\": \"MARCELO DE TOLEDO CERQUEIRA\",\n            \"Telefone\": 39185105,\n            \"UF\": \"SP\"\n        },\n        {\n            \"Bairro\": \"TAQUARA\",\n            \"CEP\": 22740362,\n            \"CNPJ\": 57352183000121,\n            \"Cargo_Representante\": \"SOCIO ADMINISTRADOR\",\n            \"Cidade\": \"Rio de Janeiro\",\n            \"Complemento\": \"\",\n            \"DDD\": 21,\n            \"Data_Registro_ANS\": \"2025-03-17\",\n            \"Endereco_eletronico\": \"leonardo@unimedicasaude.com\",\n            \"Fax\": \"\",\n            \"Logradouro\": \"ESTRADA DO TINDIBA\",\n            \"Modalidade\": \"Administradora de Benefícios\",\n            \"Nome_Fantasia\": \"LAGO SAUDE\",\n            \"Numero\": \"1630\",\n            \"Razao_Social\": \"LAGO SAUDE ADMINISTRADORA DE BENEFICIOS LTDA\",\n            \"Registro_ANS\": 424323,\n            \"Representante\": \"RODRIGO BARBOSA VILHENA\",\n            \"Telefone\": 999434833,\n            \"UF\": \"RJ\"\n        },\n        {\n            \"Bairro\": \"CENTRO\",\n            \"CEP\": 95020181,\n            \"CNPJ\": 88645403000139,\n            \"Cargo_Representante\": \"DIRETOR GERAL\",\n            \"Cidade\": \"Caxias do Sul\",\n            \"Complemento\": \"\",\n            \"DDD\": 54,\n            \"Data_Registro_ANS\": \"1998-12-24\",\n            \"Endereco_eletronico\": \"regulacaoprodutos@circulosaude.com.br\",\n            \"Fax\": 542233491,\n            \"Logradouro\": \"RUA VISCONDE DE PELOTAS\",\n            \"Modalidade\": \"Medicina de Grupo\",\n            \"Nome_Fantasia\": \"CIRCULO OPERARIO CAXIENSE\",\n            \"Numero\": \"809\",\n            \"Razao_Social\": \"CIRCULO OPERARIO CAXIENSE\",\n            \"Registro_ANS\": 310247,\n            \"Representante\": \"ALESSANDRO DANIEL CAVAGNOLLI\",\n            \"Telefone\": 21010000,\n            \"UF\": \"RS\"\n        },\n        {\n            \"Bairro\": \"JARDIM APOLO\",\n            \"CEP\": 12243000,\n            \"CNPJ\": 4202013000102,\n            \"Cargo_Representante\": \"DIRETOR\",\n            \"Cidade\": \"São José dos Campos\",\n            \"Complemento\": \"\",\n            \"DDD\": 12,\n            \"Data_Registro_ANS\": \"2006-08-02\",\n            \"Endereco_eletronico\": \"contato.ans@policlinsaude.com.br\",\n            \"Fax\": 37972833,\n            \"Logradouro\": \"AV NOVE DE JULHO \",\n            \"Modalidade\": \"Medicina de Grupo\",\n            \"Nome_Fantasia\": \"\",\n            \"Numero\": \"355\",\n            \"Razao_Social\": \"POLICLIN SAÚDE S/A.\",\n            \"Registro_ANS\": 415693,\n            \"Representante\": \"CYRO ALVES DE BRITTO FILHO\",\n            \"Telefone\": 37972833,\n            \"UF\": \"SP\"\n        },\n        {\n            \"Bairro\": \"JARDIM SAO BENTO\",\n            \"CEP\": 13202510,\n            \"CNPJ\": 2569472000195,\n            \"Cargo_Representante\": \"SOCIO ADMINISTRADOR\",\n            \"Cidade\": \"Jundiaí\",\n            \"Complemento\": \"\",\n            \"DDD\": 11,\n            \"Data_Registro_ANS\": \"2007-01-31\",\n            \"Endereco_eletronico\": \"idealvidaesaude@terra.com.br\",\n            \"Fax\": 48163740,\n            \"Logradouro\": \"RUA AUGUSTO DA SILVA PALHARES\",\n            \"Modalidade\": \"Medicina de Grupo\",\n            \"Nome_Fantasia\": \"IDEAL VIDA E SAUDE\",\n            \"Numero\": \"105\",\n            \"Razao_Social\": \"CENTRO DE ENDOCRINOLOGIA DE JUNDIAÍ S/S LTDA\",\n            \"Registro_ANS\": 415910,\n            \"Representante\": \"RONALDO MOISES\",\n            \"Telefone\": 46072323,\n            \"UF\": \"SP\"\n        },\n        {\n            \"Bairro\": \"Centro\",\n            \"CEP\": 29015360,\n            \"CNPJ\": 19691730000104,\n            \"Cargo_Representante\": \"DIRETOR PRESIDENTE\",\n            \"Cidade\": \"Vitória\",\n            \"Complemento\": \"\",\n            \"DDD\": 27,\n            \"Data_Registro_ANS\": \"2014-09-22\",\n            \"Endereco_eletronico\": \"bianca@eshoje.com.br\",\n            \"Fax\": \"\",\n            \"Logradouro\": \"Escadaria Acyr Guimarães\",\n            \"Modalidade\": \"Medicina de Grupo\",\n            \"Nome_Fantasia\": \"\",\n            \"Numero\": \"25\",\n            \"Razao_Social\": \"MAIS SAUDE S/A\",\n            \"Registro_ANS\": 419516,\n            \"Representante\": \"SAULO VON RONDON DE ALMEIDA\",\n            \"Telefone\": 33204344,\n            \"UF\": \"ES\"\n        },\n        {\n            \"Bairro\": \"AGUA VERDE\",\n            \"CEP\": 80240040,\n            \"CNPJ\": 57061466000114,\n            \"Cargo_Representante\": \"SÓCIO ADMINISTRADOR\",\n            \"Cidade\": \"Curitiba\",\n            \"Complemento\": \"\",\n            \"DDD\": 41,\n            \"Data_Registro_ANS\": \"2024-11-27\",\n            \"Endereco_eletronico\": \"marcelo@castellano.com.br\",\n            \"Fax\": \"\",\n            \"Logradouro\": \"AVENIDA GETULIO VARGAS\",\n            \"Modalidade\": \"Odontologia de Grupo\",\n            \"Nome_Fantasia\": \"ODONTO CARE\",\n            \"Numero\": \"2561\",\n            \"Razao_Social\": \"CASTELLANO ODONTO PLANOS DE SAUDE LTDA\",\n            \"Registro_ANS\": 424269,\n            \"Representante\": \"MARCELO CASTELLANO\",\n            \"Telefone\": 30140104,\n            \"UF\": \"PR\"\n        }\n    ],\n    \"meta\": {\n        \"page\": 1,\n        \"per_page\": 10,\n        \"total\": 269,\n        \"total_pages\": 27\n    }\n}"
+				},
+				{
+					"name": "Example without q in query",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base}}/search?page=1&per_page=10&sort_by=Complemento&order=asc",
+							"host": [
+								"{{base}}"
+							],
+							"path": [
+								"search"
+							],
+							"query": [
+								{
+									"key": "q",
+									"value": "saude",
+									"disabled": true
+								},
+								{
+									"key": "page",
+									"value": "1"
+								},
+								{
+									"key": "per_page",
+									"value": "10"
+								},
+								{
+									"key": "sort_by",
+									"value": "Complemento"
+								},
+								{
+									"key": "order",
+									"value": "asc"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "Werkzeug/3.1.3 Python/3.12.9"
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 29 Mar 2025 00:45:00 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Content-Length",
+							"value": "7232"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"data\": [\n        {\n            \"Bairro\": \"PRAÇA DA BANDEIRA\",\n            \"CEP\": 36660000,\n            \"CNPJ\": 19541931000125,\n            \"Cargo_Representante\": \"SÓCIO ADMINISTRADOR\",\n            \"Cidade\": \"Além Paraíba\",\n            \"Complemento\": \"\",\n            \"DDD\": 32,\n            \"Data_Registro_ANS\": \"2015-05-19\",\n            \"Endereco_eletronico\": \"contabilidade@cbnassessoria.com.br\",\n            \"Fax\": \"\",\n            \"Logradouro\": \"RUA CAPITÃO MEDEIROS DE REZENDE\",\n            \"Modalidade\": \"Administradora de Benefícios\",\n            \"Nome_Fantasia\": \"\",\n            \"Numero\": \"274\",\n            \"Razao_Social\": \"18 DE JULHO ADMINISTRADORA DE BENEFÍCIOS LTDA\",\n            \"Registro_ANS\": 419761,\n            \"Representante\": \"LUIZ HENRIQUE MARENDINO GONÇALVES\",\n            \"Telefone\": 34624649,\n            \"UF\": \"MG\"\n        },\n        {\n            \"Bairro\": \"CENTRO\",\n            \"CEP\": 28010140,\n            \"CNPJ\": 3638220000133,\n            \"Cargo_Representante\": \"DIRETOR FINANCEIRO\",\n            \"Cidade\": \"Campos dos Goytacazes\",\n            \"Complemento\": \"\",\n            \"DDD\": 22,\n            \"Data_Registro_ANS\": \"2000-06-27\",\n            \"Endereco_eletronico\": \"planoases@ases.com.br\",\n            \"Fax\": 27330866,\n            \"Logradouro\": \"RUA CONSELHEIRO OTAVIANO\",\n            \"Modalidade\": \"Medicina de Grupo\",\n            \"Nome_Fantasia\": \"ASES\",\n            \"Numero\": \"130\",\n            \"Razao_Social\": \"PLANO DE SAUDE ASES LTDA.\",\n            \"Registro_ANS\": 411582,\n            \"Representante\": \"RENATO GOMES DE SOUZA VALE\",\n            \"Telefone\": 27262000,\n            \"UF\": \"RJ\"\n        },\n        {\n            \"Bairro\": \"GONZAGA\",\n            \"CEP\": 11060002,\n            \"CNPJ\": 2864364000145,\n            \"Cargo_Representante\": \"REPRESENTANTE LEGAL\",\n            \"Cidade\": \"Santos\",\n            \"Complemento\": \"\",\n            \"DDD\": 13,\n            \"Data_Registro_ANS\": \"1998-12-16\",\n            \"Endereco_eletronico\": \"anacostasaude@anacostasaude.com.br\",\n            \"Fax\": 32851200,\n            \"Logradouro\": \"AV ANA COSTA\",\n            \"Modalidade\": \"Medicina de Grupo\",\n            \"Nome_Fantasia\": \"PLANO DE SAÚDE ANA COSTA LTDA.\",\n            \"Numero\": \"468\",\n            \"Razao_Social\": \"PLANO DE SAÚDE ANA COSTA LTDA.\",\n            \"Registro_ANS\": 360244,\n            \"Representante\": \"ALEXANDRE GINO CAMARGO ZORNIG\",\n            \"Telefone\": 32851200,\n            \"UF\": \"SP\"\n        },\n        {\n            \"Bairro\": \"JARDIM BOTÂNICO\",\n            \"CEP\": 14021644,\n            \"CNPJ\": 5983170000157,\n            \"Cargo_Representante\": \"REPRESENTANTE\",\n            \"Cidade\": \"Ribeirão Preto\",\n            \"Complemento\": \"\",\n            \"DDD\": 16,\n            \"Data_Registro_ANS\": \"2007-03-08\",\n            \"Endereco_eletronico\": \"atendimento@dentalvidas.com.br\",\n            \"Fax\": \"\",\n            \"Logradouro\": \"RUA MAGID ANTONIO CALIL\",\n            \"Modalidade\": \"Odontologia de Grupo\",\n            \"Nome_Fantasia\": \"DENTALVIDAS\",\n            \"Numero\": \"176\",\n            \"Razao_Social\": \"PLANO ODONTOLÓGICO DENTALVIDAS LTDA.\",\n            \"Registro_ANS\": 415936,\n            \"Representante\": \" ICARO VILAR MOTA GUIMARÃES\",\n            \"Telefone\": 81643959,\n            \"UF\": \"SP\"\n        },\n        {\n            \"Bairro\": \"VILA MENDONÇA\",\n            \"CEP\": 16015000,\n            \"CNPJ\": 29117294000118,\n            \"Cargo_Representante\": \"SÓCIO PROPRIETÁRIO\",\n            \"Cidade\": \"Araçatuba\",\n            \"Complemento\": \"\",\n            \"DDD\": 18,\n            \"Data_Registro_ANS\": \"2022-12-12\",\n            \"Endereco_eletronico\": \"reginaldo.sigmasaude@gmail.com\",\n            \"Fax\": \"\",\n            \"Logradouro\": \"RUA FLORIANO PEIXOTO\",\n            \"Modalidade\": \"Medicina de Grupo\",\n            \"Nome_Fantasia\": \"\",\n            \"Numero\": \"1009\",\n            \"Razao_Social\": \"PLANO SIGMA SAÚDE LTDA\",\n            \"Registro_ANS\": 423408,\n            \"Representante\": \"EVALDO DE ARAÚJO SANCHEZ\",\n            \"Telefone\": 31176391,\n            \"UF\": \"SP\"\n        },\n        {\n            \"Bairro\": \"SÃO JOSE\",\n            \"CEP\": 49015220,\n            \"CNPJ\": 4430627000133,\n            \"Cargo_Representante\": \"SÓCIO-ADMINISTRATIVO\",\n            \"Cidade\": \"Aracaju\",\n            \"Complemento\": \"\",\n            \"DDD\": \"\",\n            \"Data_Registro_ANS\": \"2007-04-13\",\n            \"Endereco_eletronico\": \"financeiro@oralsantahelena.com.br\",\n            \"Fax\": 32116668,\n            \"Logradouro\": \"RUA CAMPOS\",\n            \"Modalidade\": \"Odontologia de Grupo\",\n            \"Nome_Fantasia\": \"ORAL SANTA HELENA\",\n            \"Numero\": \"130\",\n            \"Razao_Social\": \"PLANO VIDA SAUDE SERVIÇOS ODONTOLOGICOS LTDA\",\n            \"Registro_ANS\": 415987,\n            \"Representante\": \"JOSAN PEREIRA TENORIO\",\n            \"Telefone\": \"\",\n            \"UF\": \"SE\"\n        },\n        {\n            \"Bairro\": \"VASCO DA GAMA\",\n            \"CEP\": 20921003,\n            \"CNPJ\": 28023703000154,\n            \"Cargo_Representante\": \"REPRESENTANTE LEGAL\",\n            \"Cidade\": \"Rio de Janeiro\",\n            \"Complemento\": \"\",\n            \"DDD\": 2,\n            \"Data_Registro_ANS\": \"1999-08-23\",\n            \"Endereco_eletronico\": \"grupoonix2006@yahoo.com.br\",\n            \"Fax\": 133016013,\n            \"Logradouro\": \"RUA SÃO JANUÁRIO\",\n            \"Modalidade\": \"Medicina de Grupo\",\n            \"Nome_Fantasia\": \"ÔNIX OPERADORA DE PLANOS DE SAÚDE LTDA\",\n            \"Numero\": \"468\",\n            \"Razao_Social\": \"ÔNIX OPERADORA DE PLANOS DE SAÚDE LTDA\",\n            \"Registro_ANS\": 407534,\n            \"Representante\": \"CECI BANDEIRA DE MELO PEREIRA FILHA\",\n            \"Telefone\": 124026388,\n            \"UF\": \"RJ\"\n        },\n        {\n            \"Bairro\": \"CENTRO\",\n            \"CEP\": 75901050,\n            \"CNPJ\": 37275625000176,\n            \"Cargo_Representante\": \"PRESIDENTE\",\n            \"Cidade\": \"Rio Verde\",\n            \"Complemento\": \"\",\n            \"DDD\": 64,\n            \"Data_Registro_ANS\": \"1998-12-24\",\n            \"Endereco_eletronico\": \"juridico@unimedrv.com.br\",\n            \"Fax\": 21014900,\n            \"Logradouro\": \"RUA COSTA GOMES\",\n            \"Modalidade\": \"Cooperativa Médica\",\n            \"Nome_Fantasia\": \"UNIMED RIO VERDE\",\n            \"Numero\": \"208\",\n            \"Razao_Social\": \"UNIMED RIO VERDE COOPERATIVA TRABALHO MEDICO\",\n            \"Registro_ANS\": 320251,\n            \"Representante\": \"MARCIO EMRICH CAMPOS\",\n            \"Telefone\": 21014967,\n            \"UF\": \"GO\"\n        },\n        {\n            \"Bairro\": \"BOSQUE\",\n            \"CEP\": 69908330,\n            \"CNPJ\": 84313741000112,\n            \"Cargo_Representante\": \"PRESIDENTE\",\n            \"Cidade\": \"Rio Branco\",\n            \"Complemento\": \"\",\n            \"DDD\": 68,\n            \"Data_Registro_ANS\": \"1998-12-21\",\n            \"Endereco_eletronico\": \"crd.ans@unimedrb.com.br\",\n            \"Fax\": 21064545,\n            \"Logradouro\": \"RUA JOSÉ DE MELO\",\n            \"Modalidade\": \"Cooperativa Médica\",\n            \"Nome_Fantasia\": \"UNIMED RIO BRANCO COOPERATIVA DE TRABALHO MEDICO LTDA\",\n            \"Numero\": \"418\",\n            \"Razao_Social\": \"UNIMED RIO BRANCO COOPERATIVA DE TRABALHO MEDICO LTDA\",\n            \"Registro_ANS\": 337871,\n            \"Representante\": \"MARCUS VINICIUS SHOITI YOMURA\",\n            \"Telefone\": 21064546,\n            \"UF\": \"AC\"\n        },\n        {\n            \"Bairro\": \"CENTRO\",\n            \"CEP\": 78700180,\n            \"CNPJ\": 24676884000167,\n            \"Cargo_Representante\": \"DIRETOR PRESIDENTE\",\n            \"Cidade\": \"Rondonópolis\",\n            \"Complemento\": \"\",\n            \"DDD\": 66,\n            \"Data_Registro_ANS\": \"1998-12-24\",\n            \"Endereco_eletronico\": \"diretoria@unimedrondonopolis.com.br\",\n            \"Fax\": \"\",\n            \"Logradouro\": \"RUA RIO BRANCO\",\n            \"Modalidade\": \"Cooperativa Médica\",\n            \"Nome_Fantasia\": \"UNIMED RONDONÓPOLIS\",\n            \"Numero\": \"933\",\n            \"Razao_Social\": \"UNIMED RONDONOPOLIS COOPERATIVA DE TRABALHO MÉDICO LTDA\",\n            \"Registro_ANS\": 359777,\n            \"Representante\": \"RICARDO CORREA GONZALES\",\n            \"Telefone\": 34392800,\n            \"UF\": \"MT\"\n        }\n    ],\n    \"meta\": {\n        \"page\": 1,\n        \"per_page\": 10,\n        \"total\": 1106,\n        \"total_pages\": 111\n    }\n}"
+				}
+			]
+		}
+	]
+}
