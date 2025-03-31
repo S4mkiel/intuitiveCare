@@ -53,10 +53,6 @@ Para gerenciar dependências, utilizei o Poetry. Siga as instruções abaixo par
    ```
 
 ---
-
-## **Instalação das Dependências**
-```
-
 ## 📂 Estrutura do Projeto
 ```
 📁 step1&2
@@ -75,7 +71,6 @@ Para gerenciar dependências, utilizei o Poetry. Siga as instruções abaixo par
 │-- pyproject.toml  # Configuração do Poetry
 │-- main.py         # Script principal
 ```
-
 ## 🔧 Instalação das Dependências
 Dentro do diretório do projeto, execute:
 
